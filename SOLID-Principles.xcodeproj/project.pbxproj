@@ -12,6 +12,12 @@
 		D0784F5728128A49001D5AB6 /* SRP-After.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0784F5628128A49001D5AB6 /* SRP-After.swift */; };
 		D0784F5A28128AB6001D5AB6 /* OCP-Before.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0784F5928128AB6001D5AB6 /* OCP-Before.swift */; };
 		D0784F5C28128ADF001D5AB6 /* OCP-After.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0784F5B28128ADF001D5AB6 /* OCP-After.swift */; };
+		D0784F5F28128C0F001D5AB6 /* Liskov-Before.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0784F5E28128C0F001D5AB6 /* Liskov-Before.swift */; };
+		D0784F6128128C1C001D5AB6 /* Liskov-After.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0784F6028128C1C001D5AB6 /* Liskov-After.swift */; };
+		D09E23CE2817F7D000DE48F1 /* ISP-Before.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E23CD2817F7D000DE48F1 /* ISP-Before.swift */; };
+		D09E23D02817F7DD00DE48F1 /* ISP-After.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E23CF2817F7DD00DE48F1 /* ISP-After.swift */; };
+		D09E23D32817F87000DE48F1 /* DIP-Before.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E23D22817F87000DE48F1 /* DIP-Before.swift */; };
+		D09E23D52817F87B00DE48F1 /* DIP-After.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E23D42817F87B00DE48F1 /* DIP-After.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +39,12 @@
 		D0784F5628128A49001D5AB6 /* SRP-After.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SRP-After.swift"; sourceTree = "<group>"; };
 		D0784F5928128AB6001D5AB6 /* OCP-Before.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCP-Before.swift"; sourceTree = "<group>"; };
 		D0784F5B28128ADF001D5AB6 /* OCP-After.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCP-After.swift"; sourceTree = "<group>"; };
+		D0784F5E28128C0F001D5AB6 /* Liskov-Before.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Liskov-Before.swift"; sourceTree = "<group>"; };
+		D0784F6028128C1C001D5AB6 /* Liskov-After.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Liskov-After.swift"; sourceTree = "<group>"; };
+		D09E23CD2817F7D000DE48F1 /* ISP-Before.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ISP-Before.swift"; sourceTree = "<group>"; };
+		D09E23CF2817F7DD00DE48F1 /* ISP-After.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ISP-After.swift"; sourceTree = "<group>"; };
+		D09E23D22817F87000DE48F1 /* DIP-Before.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DIP-Before.swift"; sourceTree = "<group>"; };
+		D09E23D42817F87B00DE48F1 /* DIP-After.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DIP-After.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,9 @@
 			children = (
 				D0784F53281288BE001D5AB6 /* Single Responsibility */,
 				D0784F5828128A89001D5AB6 /* Open-Closed  */,
+				D0784F5D28128BD1001D5AB6 /* Liskov Substitution */,
+				D09E23CC2817F1C200DE48F1 /* Interface Segregation */,
+				D09E23D12817F85700DE48F1 /* Dependency Inversion */,
 				D0784F4C281288AF001D5AB6 /* main.swift */,
 			);
 			path = "SOLID-Principles";
@@ -88,6 +103,33 @@
 				D0784F5B28128ADF001D5AB6 /* OCP-After.swift */,
 			);
 			path = "Open-Closed ";
+			sourceTree = "<group>";
+		};
+		D0784F5D28128BD1001D5AB6 /* Liskov Substitution */ = {
+			isa = PBXGroup;
+			children = (
+				D0784F5E28128C0F001D5AB6 /* Liskov-Before.swift */,
+				D0784F6028128C1C001D5AB6 /* Liskov-After.swift */,
+			);
+			path = "Liskov Substitution";
+			sourceTree = "<group>";
+		};
+		D09E23CC2817F1C200DE48F1 /* Interface Segregation */ = {
+			isa = PBXGroup;
+			children = (
+				D09E23CD2817F7D000DE48F1 /* ISP-Before.swift */,
+				D09E23CF2817F7DD00DE48F1 /* ISP-After.swift */,
+			);
+			path = "Interface Segregation";
+			sourceTree = "<group>";
+		};
+		D09E23D12817F85700DE48F1 /* Dependency Inversion */ = {
+			isa = PBXGroup;
+			children = (
+				D09E23D22817F87000DE48F1 /* DIP-Before.swift */,
+				D09E23D42817F87B00DE48F1 /* DIP-After.swift */,
+			);
+			path = "Dependency Inversion";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,11 +190,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0784F5F28128C0F001D5AB6 /* Liskov-Before.swift in Sources */,
+				D09E23D52817F87B00DE48F1 /* DIP-After.swift in Sources */,
 				D0784F5728128A49001D5AB6 /* SRP-After.swift in Sources */,
+				D09E23D02817F7DD00DE48F1 /* ISP-After.swift in Sources */,
 				D0784F5C28128ADF001D5AB6 /* OCP-After.swift in Sources */,
 				D0784F5A28128AB6001D5AB6 /* OCP-Before.swift in Sources */,
+				D0784F6128128C1C001D5AB6 /* Liskov-After.swift in Sources */,
 				D0784F5528128A14001D5AB6 /* SRP-Before.swift in Sources */,
 				D0784F4D281288AF001D5AB6 /* main.swift in Sources */,
+				D09E23D32817F87000DE48F1 /* DIP-Before.swift in Sources */,
+				D09E23CE2817F7D000DE48F1 /* ISP-Before.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
