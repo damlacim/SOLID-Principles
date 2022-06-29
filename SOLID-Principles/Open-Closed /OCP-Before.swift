@@ -34,7 +34,7 @@ class Doctors: Employees {
 }
 
 class HospitalGroup {
-    func work(employee: Employee) {
+    func work(employee: Employees) {
         if employee is Doctors {
             let doctor = employee as! Doctors
             doctor.diagnose()
