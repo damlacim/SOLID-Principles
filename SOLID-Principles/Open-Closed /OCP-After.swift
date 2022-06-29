@@ -11,71 +11,66 @@ protocol Employee {
     func work()
     var name : String {get set}
     var surname: String {get set}
-    
 }
 
 class Nurse: Employee {
+    var name: String
+    var surname: String
+    
     internal init(name: String, surname: String) {
         self.name = name
         self.surname = surname
+    }
+    
+    func checkVitals() {
+        print("check vitals")
     }
     
     func work() {
         checkVitals()
     }
-    
-    var name: String
-    var surname: String
-   
-    
-    
-    func checkVitals() {
-        print("check vitals")
-    }
-   
 }
 
 class Doctor: Employee {
+    var name: String
+    var surname: String
+    
     internal init(name: String, surname: String) {
         self.name = name
         self.surname = surname
+    }
+    
+    func diagnose() {
+        print("diagnosing")
+    }
+    
+    func giveMedicine() {
+        print("giving medicine")
     }
     
     func work() {
         diagnose()
         giveMedicine()
     }
-    
-    var name: String
-    
-    var surname: String
-    
-    func diagnose() {
-        print("diagnosing")
-    }
-    func giveMedicine() {
-        print("giving medicine")
-    }
-   
 }
+
 class CleaningStaff: Employee {
+    
+    var name: String = ""
+    var surname: String = ""
+    
     internal init(name: String = "", surname: String = "") {
         self.name = name
         self.surname = surname
     }
     
-    func work() {
-        clean()
-    }
-    
-    var name: String = ""
-    
-    var surname: String = ""
-    
     func clean() {
         print("clening")
     }
     
+    func work() {
+        clean()
+    }
 }
 
 class Hospital {
