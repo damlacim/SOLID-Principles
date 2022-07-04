@@ -30,7 +30,6 @@ class CreditCardPaymentMethod: PaymentProtocol {
 }
 
 class PaymentManager {
-    
     func pay(paymentMethod: PaymentProtocol) {
         paymentMethod.paymentMethod()
     }
